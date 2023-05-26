@@ -3,10 +3,15 @@ import networkx as nx
 import pandas as pd
 import json
 from ipycytoscape import *
+import streamlit as st
+
+st.markdown('#Materialcheck Graph Module')
+
+
 df = pd.read_csv('data_materialcheck.csv', sep=';')
 # Also this
 df = df.fillna('')
-df
+# df
 # Import stuff to dynamically update the graph
 from ipywidgets import Output
 from IPython.display import display
